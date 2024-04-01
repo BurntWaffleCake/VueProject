@@ -16,15 +16,28 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
             <RouterLink class="nav-link" to="/">Home</RouterLink>
           </div>
           <div class="nav-item">
+            <RouterLink class="nav-link" to="/AboutMe">About Me</RouterLink>
+          </div>
+          <div class="nav-item">
+            <RouterLink class="nav-link" to="/">Articles</RouterLink>
+          </div>
+
+          <div class="nav-item">
+            <RouterLink class="nav-link" to="/">Blog</RouterLink>
+          </div>
+
+          <div class="nav-item">
+            <RouterLink class="nav-link" to="/">Projects</RouterLink>
+          </div>
+          <div class="nav-item">
             <RouterLink class="nav-link" to="/Template">Template</RouterLink>
           </div>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Articles </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <RouterLink class="dropdown-item" to="/">Algorithms</RouterLink>
+              <RouterLink class="dropdown-item" to="/">Physics</RouterLink>
+              <RouterLink class="dropdown-item" to="/">Graphics</RouterLink>
             </ul>
           </li>
           <li class="nav-item">

@@ -1,11 +1,10 @@
-<script setup lang="ts">
-import TopologyBackdrop from "../Vanta/TopologyBackdrop.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <p><strong>Current route path:</strong> {{ $route.fullPath }}</p>
-  <div class="display-1">This is the home page</div>
-  <TopologyBackdrop class="w-100 h-100" />
+  <div class="flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+    <div class="display-1">Digital Portfolio</div>
+    <div class="h1">Soohan Cho</div>
+  </div>
 </template>
 
 <style scoped></style>

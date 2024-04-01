@@ -1,10 +1,4 @@
-<script setup lang="ts">
-import { useRoute, useRouter } from "vue-router";
-const location = useRoute();
-const router = useRouter();
-const routes = router.getRoutes();
-console.log(routes);
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <p><strong>Current route path:</strong> {{ $route.fullPath }}</p>
