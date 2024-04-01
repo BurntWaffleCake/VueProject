@@ -2,6 +2,11 @@
 import { ref } from "vue";
 const light = ref(true);
 
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
+  console.log(event);
+  // const newColorScheme = event.matches ? "dark" : "light";
+});
+
 function toggleTheme() {
   if (light.value) {
     document.getElementsByTagName("html")[0]?.setAttribute("data-bs-theme", "dark");
