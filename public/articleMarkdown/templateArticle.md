@@ -1,3 +1,8 @@
+& Type: string: Article
+& Title: string: Template
+& Date: string: 2024-04-02T19:30:25Z
+& Length : number : 156390
+
 # Header1
 
 ## Header2
