@@ -19,7 +19,7 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
             <RouterLink class="nav-link" to="/AboutMe">About Me</RouterLink>
           </div>
           <div class="nav-item">
-            <RouterLink class="nav-link" to="/">Articles</RouterLink>
+            <RouterLink class="nav-link" to="/Article">Articles</RouterLink>
           </div>
 
           <div class="nav-item">

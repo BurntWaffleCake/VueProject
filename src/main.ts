@@ -15,11 +15,17 @@ import { createWebHistory, createRouter } from "vue-router";
 import HomeView from "./components/Views/HomeView.vue";
 import TemplateArticleView from "./components/Views/TemplateArticleView.vue";
 import AboutMeView from "./components/Views/AboutMeView.vue";
+// import ArticleView from "./components/Views/Articles/Article.vue";
+
+import { defineAsyncComponent } from "vue";
+
+// const ArticleView = defineAsyncComponent(() => import("./components/Views/Articles/Article.vue"));
 
 const routes = [
   { path: "/", component: HomeView },
   { path: "/Template", component: TemplateArticleView },
   { path: "/AboutMe", component: AboutMeView },
+  { path: "/Article/:articleName?", component: defineAsyncComponent({ loader: () => import("./components/Views/Articles/Article.vue") }) },
 ];
 
 const router = createRouter({

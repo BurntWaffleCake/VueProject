@@ -16,15 +16,12 @@ evaluateAge();
       <div class="hazard-background py-4">
         <div class="w-100 d-flex flex-column align-items-center bg-body py-5">
           <div class="display-1">Soohan Cho<br /></div>
-          <div class="display-5 text-nowrap scroll-infinite">
-            So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is
-            he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he?
-          </div>
+          <div class="display-5 text-nowrap scroll-infinite">So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he? &emsp; So who is he?</div>
         </div>
       </div>
     </div>
 
-    <div class="px-0 container-fluid w-100 vh-100 d-flex flex-column justify-content-center align-items-start align-content-lg-center">
+    <div class="px-0 container-fluid w-100 vh-100 d-flex flex-column justify-content-center align-items-center align-content-lg-center">
       <div class="d-flex flex-lg-row flex-column gap-5">
         <div class="h3 bg-body p-5 rounded-5">
           <h1>Profile</h1>
