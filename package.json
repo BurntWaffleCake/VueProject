@@ -14,14 +14,17 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "@tresjs/core": "^3.7.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "three": "^0.163.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",
     "@types/node": "^20.11.28",
+    "@types/three": "^0.163.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/tsconfig": "^0.5.1",
     "gh-pages": "^6.1.1",

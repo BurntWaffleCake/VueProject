@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import NavBar from "./components/NavBar.vue";
+import FooterComp from "./components/FooterComp.vue";
+import ToPageTopButton from "./components/ToPageTopButton.vue";
 </script>
 
 <template>
@@ -7,9 +9,13 @@ import NavBar from "./components/NavBar.vue";
     <header class="sticky-top">
       <NavBar />
     </header>
-    <main class="d-flex flex-column flex-grow-1">
-      <RouterView class="" />
+    <main id="main" class="d-flex flex-column flex-grow-1">
+      <RouterView />
+      <ToPageTopButton />
     </main>
+    <footer>
+      <FooterComp />
+    </footer>
   </div>
 </template>
 
