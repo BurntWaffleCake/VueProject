@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { TresCanvas, useRenderLoop } from "@tresjs/core";
+import { nextTick } from "vue";
 import { onMounted } from "vue";
 import { ref } from "vue";
 
@@ -32,8 +33,6 @@ function interpolateHexColors(color1: string, color2: string, k: number) {
 const props = defineProps({
   backgroundColor: String,
 });
-
-console.log(props);
 
 const fromColor = "#000000";
 const toColor = "#1f1f1f";
@@ -70,7 +69,11 @@ function tick() {
 }
 target?.addEventListener("scroll", tick);
 
-onMounted(() => {});
+onMounted(() => {
+  nextTick(() => {
+    tick();
+  });
+});
 </script>
 
 <template>

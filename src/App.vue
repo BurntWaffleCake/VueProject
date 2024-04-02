@@ -5,7 +5,7 @@ import ToPageTopButton from "./components/ToPageTopButton.vue";
 </script>
 
 <template>
-  <div class="d-flex w-100 h-100 flex-column">
+  <div class="d-flex flex-column" style="min-height: 100%">
     <header class="sticky-top">
       <NavBar />
     </header>
