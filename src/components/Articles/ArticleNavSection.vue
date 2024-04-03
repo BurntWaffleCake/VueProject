@@ -1,26 +1,27 @@
 <template lang="">
-  <div class="w-50 text-lg-end">
+  <div class="w-100 text-lg-end d-flex flex-column align-items-lg-end gap-0">
     <a
       @click="onClick()"
-      class="h4 text-decoration-underline"
+      class="h4 text-decoration-none"
       data-bs-toggle="collapse"
       :href="'#' + uuid"
       aria-expanded="false"
       aria-controls="contentId"
     >
-      {{ props.label }}
+      <i class="bi" :class="props.icon"></i> {{ props.label }}
       <i class="h4 bi bi-caret-right" :class="{ 'rotated-90': active }"></i>
     </a>
     <div class="collapse show" :id="uuid">
       <slot></slot>
     </div>
-    <hr class="mt-1" />
+    <hr class="w-50 mt-1" />
   </div>
 </template>
 
 <script setup>
 const props = defineProps({
   label: String,
+  icon: String,
 });
 
 import ArticleNavLink from "./ArticleNavLink.vue";

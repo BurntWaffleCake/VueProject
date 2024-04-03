@@ -17,8 +17,13 @@ import NavBar from "./components/utility/NavBar.vue";
 import FooterComp from "./components/utility/FooterComp.vue";
 import ToPageTopButton from "./components/utility/ToPageTopButton.vue";
 
-import ArticleView from "./components/views/Article.vue";
-import PhysicsView from "./components/views/article/PhysicsView.vue";
+import ArticleHeader from "./components/Articles/ArticleHeader.vue";
+import ArticleMainNav from "./components/Articles/ArticleMainNav.vue";
+import ArticleNavLink from "./components/Articles/ArticleNavLink.vue";
+import ArticleNavSection from "./components/Articles/ArticleNavSection.vue";
+
+import ArticleView from "./components/views/ArticleView.vue";
+import PhysicsView from "./components/views/article/Physics/PhysicsView.vue";
 
 //views
 app.component("HomeView", HomeView);
@@ -28,6 +33,11 @@ app.component("ArticleView", ArticleView);
 app.component("NavBar", NavBar);
 app.component("FooterComp", FooterComp);
 app.component("ToPageTopButton", ToPageTopButton);
+
+app.component("ArticleHeader", ArticleHeader);
+app.component("ArticleMainNav", ArticleMainNav);
+app.component("ArticleNavLink", ArticleNavLink);
+app.component("ArticleNavSection", ArticleNavSection);
 
 // Routing
 import { createWebHistory, createRouter } from "vue-router";

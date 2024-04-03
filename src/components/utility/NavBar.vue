@@ -5,7 +5,8 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i class="h3 bi bi-0-circle"></i></a>
+      <RouterLink class="navbar-brand p-0" to="/"><i class="m-0 p-0 h2 bi bi-journal-code"></i></RouterLink>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -29,7 +30,7 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Articles </a>
             <ul class="dropdown-menu">
-              <RouterLink class="dropdown-item" to="/Article">Articles Home</RouterLink>
+              <RouterLink class="dropdown-item" to="/Article">Home</RouterLink>
               <RouterLink class="dropdown-item" to="/Article/Algorithms">Algorithms</RouterLink>
               <RouterLink class="dropdown-item" to="/Article/Physics">Physics</RouterLink>
               <RouterLink class="dropdown-item" to="/Article/Graphics">Graphics</RouterLink>

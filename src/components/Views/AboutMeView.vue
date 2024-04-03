@@ -30,7 +30,7 @@ evaluateAge();
       <div class="row g-0">
         <div v-motion-slide-visible-once-left class="col-12 p-3 col-lg-6">
           <div class="w-100">
-            <img class="w-100 rounded rounded-3" src="@/assets/img/Profile.png" />
+            <img class="w-100 rounded rounded-3" src="/Profile.png" />
           </div>
         </div>
         <div v-motion-slide-visible-once-right class="col-12 p-3 col-lg-6">
