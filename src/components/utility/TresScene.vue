@@ -34,14 +34,16 @@ const props = defineProps({
   backgroundColor: String,
 });
 
-const fromColor = "#000000";
-const toColor = "#1f1f1f";
+const fromColor = "000000#";
+const toColor = "000000#";
 
 const color = ref(interpolateHexColors(fromColor, toColor, 0));
 const torus1 = ref();
 const torus2 = ref();
 const torus3 = ref();
 const torus4 = ref();
+
+const camera = ref();
 
 const { onLoop } = useRenderLoop();
 
@@ -66,6 +68,7 @@ function tick() {
   torus4.value.rotation.x = 1.5 * scrollRatio + 0.945;
 
   color.value = interpolateHexColors(fromColor, toColor, scrollRatio);
+  camera.value.fov = 70 + 50 * scrollRatio;
 }
 target?.addEventListener("scroll", tick);
 
@@ -78,7 +81,7 @@ onMounted(() => {
 
 <template>
   <TresCanvas :clear-color="color" shadows window-size>
-    <TresPerspectiveCamera :position="[3, 3, 3]" :look-at="[0, 0, 0]" />
+    <TresPerspectiveCamera ref="camera" :position="[3, 3, 3]" :look-at="[0, 0, 0]" />
 
     <TresMesh ref="torus1">
       <TresTorusGeometry :args="[0.7, 0.3, 16, 32]" />

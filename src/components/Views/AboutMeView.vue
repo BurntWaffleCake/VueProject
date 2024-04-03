@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import TresScene from "../TresScene.vue";
+import TresScene from "../utility/TresScene.vue";
 
 function evaluateAge() {
   return new Date(new Date() - new Date(1136656800 * 1000)).getFullYear() - 1970;
@@ -24,51 +24,43 @@ evaluateAge();
       </div>
     </div>
 
-    <div class="px-0 container-fluid w-100 vh-100 d-flex flex-column justify-content-center align-items-start align-content-lg-center">
-      <div class="d-flex flex-lg-row flex-column gap-5">
-        <div class="h3 bg-body p-5 rounded-5">
-          <h1>Profile</h1>
-          <hr style="height: 3px" />
-          Name: Soohan Cho<br />
-          Gender: Male <br />
-          Current Age: {{ evaluateAge() }}
-
-          <hr style="height: 3px" />
+    <div
+      class="px-0 container-fluid w-100 d-flex flex-column justify-content-lg-center justify-content-start align-items-center align-content-lg-center"
+    >
+      <div class="row g-0">
+        <div v-motion-slide-visible-once-left class="col-12 p-3 col-lg-6">
+          <div class="w-100">
+            <img class="w-100 rounded rounded-3" src="@/assets/img/Profile.png" />
+          </div>
         </div>
-        <div class="h3 text-center bg-body p-5 rounded-5">
-          <h1>Skills</h1>
-          <hr style="height: 3px" />
-          Computer Scientist<br />
-          Graphic Designer<br />
-          Artist<br />
-          Scientist<br />
-          Game Developer<br />
-          Programmer<br />
-          Full Stack Developer<br />
-          Web Application Designer<br />
-          <hr style="height: 3px" />
-        </div>
-
-        <div class="h3 text-center bg-body p-5 rounded-5">
-          <h1>Skills</h1>
-          <hr style="height: 3px" />
-          Computer Scientist<br />
-          Graphic Designer<br />
-          Artist<br />
-          Scientist<br />
-          Game Developer<br />
-          Programmer<br />
-          Full Stack Developer<br />
-          Web Application Designer<br />
-          <hr style="height: 3px" />
+        <div v-motion-slide-visible-once-right class="col-12 p-3 col-lg-6">
+          <div class="w-100 h-100 rounded rounded-3 bg-body p-4 pg-lg-5">
+            <div class="h1">Profile</div>
+            <hr />
+            <div class="row">
+              <div class="col-12 col-lg-6 h-100">
+                <div class="fs-3 text-decoration-underline"><b>General</b></div>
+                <div class="fs-4"><b>Name</b>: Soohan Cho</div>
+                <div class="fs-4"><b>Gender</b>: Male</div>
+                <div class="fs-4"><b>Age</b>: {{ evaluateAge() }}</div>
+                <div class="fs-4"><b>Favorite Ice Cream Flavor</b>: Chocolate</div>
+              </div>
+              <hr class="d-block my-3 d-lg-none" />
+              <div class="col-12 col-lg-6 h-100">
+                <div class="fs-5">
+                  I am an avid computer scientist with many different interests in a wide range of different CS and non CS related topics. This
+                  website serves as a medium for me to express my expertise and personal projects as I delve into the intricate and wonderful world we
+                  live in!
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="px-0 container-fluid w-100 vh-100 d-flex flex-column justify-content-center align-items-center">
-      <div class="text-shadow-fancy h1 text-light text-center">My name is Soohan Cho. I am an</div>
-    </div>
   </div>
+
+  <div class="px-0 container-fluid w-100 vh-100 d-flex flex-column justify-content-center" style="scroll-snap-align: start"></div>
 </template>
 
 <style>
@@ -87,21 +79,6 @@ evaluateAge();
 
   100% {
     translate: 25%;
-  }
-}
-.hazard-background {
-  animation: scrollBackground 1s linear infinite;
-  /* background-repeat: repeat-x; */
-  background-size: cover;
-  background-image: repeating-linear-gradient(-55deg, #2b2b2b, #2b2b2b 30px, #6b6b6b 30px, #6b6b6b 60px);
-}
-
-@keyframes scrollBackground {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -100% 0;
   }
 }
 </style>

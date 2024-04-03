@@ -1,8 +1,4 @@
-<script setup lang="ts">
-import NavBar from "./components/NavBar.vue";
-import FooterComp from "./components/FooterComp.vue";
-import ToPageTopButton from "./components/ToPageTopButton.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="d-flex flex-column" style="min-height: 100%">

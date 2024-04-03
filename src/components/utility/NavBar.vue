@@ -6,7 +6,15 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><i class="h3 bi bi-0-circle"></i></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -18,9 +26,15 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
           <div class="nav-item">
             <RouterLink class="nav-link" to="/AboutMe">About Me</RouterLink>
           </div>
-          <div class="nav-item">
-            <RouterLink class="nav-link" to="/">Articles</RouterLink>
-          </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Articles </a>
+            <ul class="dropdown-menu">
+              <RouterLink class="dropdown-item" to="/Article">Articles Home</RouterLink>
+              <RouterLink class="dropdown-item" to="/Article/Algorithms">Algorithms</RouterLink>
+              <RouterLink class="dropdown-item" to="/Article/Physics">Physics</RouterLink>
+              <RouterLink class="dropdown-item" to="/Article/Graphics">Graphics</RouterLink>
+            </ul>
+          </li>
 
           <div class="nav-item">
             <RouterLink class="nav-link" to="/">Blog</RouterLink>
@@ -29,17 +43,7 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
           <div class="nav-item">
             <RouterLink class="nav-link" to="/">Projects</RouterLink>
           </div>
-          <div class="nav-item">
-            <RouterLink class="nav-link" to="/Template">Template</RouterLink>
-          </div>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Articles </a>
-            <ul class="dropdown-menu">
-              <RouterLink class="dropdown-item" to="/">Algorithms</RouterLink>
-              <RouterLink class="dropdown-item" to="/">Physics</RouterLink>
-              <RouterLink class="dropdown-item" to="/">Graphics</RouterLink>
-            </ul>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
