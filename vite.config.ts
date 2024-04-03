@@ -7,6 +7,7 @@ import { templateCompilerOptions } from "@tresjs/core";
 // https://vitejs.dev/config/
 export default defineConfig({
   // appType: "mpa", // disable history fallback
+  mode: "hash",
   base: "/VueProject/",
   plugins: [vue(templateCompilerOptions)],
   resolve: {
