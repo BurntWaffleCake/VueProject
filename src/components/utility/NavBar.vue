@@ -4,18 +4,10 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
 
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <RouterLink class="navbar-brand p-0" to="/"><i class="m-0 p-0 h2 bi bi-journal-code"></i></RouterLink>
+    <div class="container">
+      <RouterLink class="navbar-brand fw-bold p-0" to="/"><i class="m-0 p-0 h2 bi bi-journal-code"></i>DIGITAL PORTFOLIO</RouterLink>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 

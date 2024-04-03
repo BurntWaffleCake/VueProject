@@ -22,6 +22,7 @@
     "marked": "^12.0.1",
     "three": "^0.163.0",
     "vue": "^3.4.21",
+    "vue-mathjax-next": "^0.0.6",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {

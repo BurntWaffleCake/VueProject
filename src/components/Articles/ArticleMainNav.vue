@@ -12,7 +12,8 @@
 
         <ArticleNavSection icon="bi-boxes" label="Physics">
           <ArticleNavLink label="Introduction" path="/Article/Physics" />
-          <!-- <ArticleNavLink label="Physics Engine" path="/Article/Physics/PhysicsEngine" /> -->
+          <ArticleNavLink label="Physics Engine" path="/Article/Physics/PhysicsEngine" />
+          <ArticleNavLink label="Ball Collision" path="/Article/Physics/PhysicsEngine/BallCollision" />
         </ArticleNavSection>
 
         <ArticleNavSection icon="bi-box" label="Graphics">
