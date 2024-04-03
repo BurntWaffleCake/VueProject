@@ -25,8 +25,12 @@ import ArticleNavSection from "./components/Articles/ArticleNavSection.vue";
 
 import ArticleView from "./components/views/ArticleView.vue";
 import PhysicsView from "./components/views/article/Physics/PhysicsView.vue";
-import Physics_PhysicsEngineView from "./components/views/article/Physics/PhysicsEngine.vue";
+import Physics_PhysicsEngineView from "./components/views/article/Physics/PhysicsEngineView.vue";
 import Physics_PhysicsEngine_BallCollisionView from "./components/views/article/Physics/BallCollision.vue";
+import Physics_PhysicsEngine_BallCollisionOptimizationView from "./components/views/article/Physics/BallCollisionOptimization.vue";
+import Physics_PhysicsEngine_BoxCollisionView from "./components/views/article/Physics/BoxCollisionView.vue";
+import Physics_PhysicsEngine_PolyCollisionView from "./components/views/article/Physics/PolygonCollisionView.vue";
+import Physics_PhysicsEngine_VerletPhysicsView from "./components/views/article/Physics/VerletPhysicsView.vue";
 
 //views
 app.component("HomeView", HomeView);
@@ -74,6 +78,22 @@ const routes = [
                 path: "BallCollision",
                 component: Physics_PhysicsEngine_BallCollisionView,
               },
+              {
+                path: "BallCollisionOptimization",
+                component: Physics_PhysicsEngine_BallCollisionOptimizationView,
+              },
+              {
+                path: "BoxCollision",
+                component: Physics_PhysicsEngine_BoxCollisionView,
+              },
+              {
+                path: "PolygonCollision",
+                component: Physics_PhysicsEngine_PolyCollisionView,
+              },
+              {
+                path: "VerletPhysics",
+                component: Physics_PhysicsEngine_VerletPhysicsView,
+              },
             ],
           },
         ],
@@ -97,6 +117,7 @@ app.use(MotionPlugin);
 
 //MathJax
 import VueMathjax from "vue-mathjax-next";
+import PolygonCollisionView from "./components/views/article/Physics/PolygonCollisionView.vue";
 app.use(VueMathjax);
 
 app.mount("#app");

@@ -12,7 +12,7 @@
 
       <!-- Main Body -->
       <div class="col-12 col-lg-6 flex-grow-1 shadow p-0">
-        <ArticleHeader title="Physics" title-image-path="/img/physicsBackdrop.png" />
+        <ArticleHeader title="Ball Collision" title-image-path="/img/ballCollisionBackdrop.webp" />
         <!-- Main Content -->
 
         <div class="px-4">
@@ -38,10 +38,7 @@
           <p class="p-0 pb-3 m-0 text-center">\( l_{distance} = |\vec{d}| \)</p>
           <p class="p-0 pb-3 m-0 text-center">Point is in circle when: \( l_{distance} < r_{radius}\)</p>
 
-          <div style="height: 15rem">
-            <ArticleDiagram path="article\CircleCollision\CirclePointOverlap.drawio.svg" />
-          </div>
-          <div class="image-display mb-5" style="height: 15rem; background-image: url('/article/CircleCollision/CirclePointOverlap.drawio.svg')"></div>
+          <img class="w-100 p-5" style="max-height: 20rem" src="/article/CircleCollision/CirclePointOverlap.drawio.svg" />
 
           <h3 class="bookmark" data-skew="1">Circle To Circle Collision Detection Algorithm</h3>
           <p>
@@ -55,7 +52,7 @@
           <p class="p-0 pb-3 m-0 text-center">Circles are colliding when: \( l_{distance} < r_{sum} \)</p>
           <p class="p-0 pb-3 m-0 text-center">\( d_{depth} = r_{sum} - l_{distance} \)</p>
 
-          <div class="image-display mb-5" style="height: 15rem; background-image: url('/article/CircleCollision/CircleCircleOverlap.drawio.svg')"></div>
+          <img class="w-100 p-5" style="max-height: 20rem" src="/article/CircleCollision/CircleCircleOverlap.drawio.svg" />
 
           <h3 class="bookmark" data-skew="1">Collision Response</h3>
           <p>
@@ -70,7 +67,8 @@
             [Note the negative when solving for \( \vec{b_{delta}} \). <br />
             We want the circles to move in opposite directions]
           </p>
-          <div class="image-display mb-5" style="height: 15rem; background-image: url('/article/CircleCollision/CircleDelta.drawio.svg')"></div>
+
+          <img class="w-100 p-5" style="max-height: 20rem" src="/article/CircleCollision/CircleDelta.drawio.svg" />
 
           <p>
             Notice the fact that the offset / delta vector we used to move the circles are perpendicular to the tangent line of the point the offset vector's axis intersects. The unit vector of this offset is the same as the "normal" vector that faces towards the opposing circle thus defining a "normal" vector as one that lays perpendicular to a

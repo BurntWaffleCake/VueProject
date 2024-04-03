@@ -3,7 +3,7 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary z-3">
     <div class="container">
       <RouterLink class="navbar-brand fw-bold p-0" to="/"><i class="m-0 p-0 h2 bi bi-journal-code"></i>DIGITAL PORTFOLIO</RouterLink>
 
