@@ -5,9 +5,20 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary z-3">
     <div class="container">
-      <RouterLink class="navbar-brand fw-bold p-0" to="/"><i class="m-0 p-0 h2 bi bi-journal-code"></i>DIGITAL PORTFOLIO</RouterLink>
+      <RouterLink class="navbar-brand fw-bold p-0 d-flex flex-row align-items-center gap-1" to="/"
+        ><i class="m-0 p-0 h1 bi bi-journal-code"></i>
+        <div class="fs-6">DIGITAL<br />PORTFOLIO</div></RouterLink
+      >
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -29,17 +40,14 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
             </ul>
           </li>
 
-          <div class="nav-item">
+          <!-- <div class="nav-item">
             <RouterLink class="nav-link" to="/">Blog</RouterLink>
           </div>
 
           <div class="nav-item">
             <RouterLink class="nav-link" to="/">Projects</RouterLink>
-          </div>
+          </div> -->
 
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
           <li class="ms-lg-auto">
             <ThemeToggleButton />
           </li>

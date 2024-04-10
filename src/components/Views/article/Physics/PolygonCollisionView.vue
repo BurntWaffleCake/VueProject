@@ -17,18 +17,45 @@
 
         <div class="px-4">
           <nav class="breadcrumb">
-            <a class="breadcrumb-item" href="../../../index.html">Articles</a>
-            <a class="breadcrumb-item" href="../../index.html">Physics</a>
-            <a class="breadcrumb-item" href="../index.html">Physics Engine</a>
+            <RouterLink class="breadcrumb-item" to="/Article">Articles</RouterLink>
+            <RouterLink class="breadcrumb-item" to="/Article/Physics">Physics</RouterLink>
+            <RouterLink class="breadcrumb-item" to="/Article/Physics/PhysicsEngine">Physics Engine</RouterLink>
             <span class="breadcrumb-item active" aria-current="page">Polygon Collision</span>
           </nav>
 
           <h1 style="width: 100%">Polygon Collision</h1>
 
-          <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOEdemY" data-user="WaffleCake-the-decoder" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em">
-            <span>See the Pen <a href="https://codepen.io/WaffleCake-the-decoder/pen/gOEdemY"> Untitled</a> by WaffleCake (<a href="https://codepen.io/WaffleCake-the-decoder">@WaffleCake-the-decoder</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+          <p>
+            Using the SAT algorithm we described prior, some physics equations to calculate responses to collisions, and a way to apply forces, we can
+            extend the engine to be able to handle any type of convex polygon (think of shapes without any "dents"). Concave polygons are handled by
+            splitting them into multiple convex polygons (usually triangles). Being able to freely apply forces on our physics objects allows us to
+            form models or collections of polygons that are connected or "welded" together. This allows us to form very complex shapes out of
+            individual, simplified shapes while retaining high quality collision fidelity.
           </p>
-          <a href="./src/index.html" target="_blank" style="color: white">Click to open in new tab</a>
+          <p
+            class="codepen"
+            data-height="300"
+            data-default-tab="html,result"
+            data-slug-hash="gOEdemY"
+            data-user="WaffleCake-the-decoder"
+            style="
+              height: 300px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen <a href="https://codepen.io/WaffleCake-the-decoder/pen/gOEdemY"> Untitled</a> by WaffleCake (<a
+                href="https://codepen.io/WaffleCake-the-decoder"
+                >@WaffleCake-the-decoder</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
         </div>
         <!-- End of Main Content -->
       </div>

@@ -17,14 +17,17 @@
 
         <div class="px-4">
           <nav class="breadcrumb">
-            <a class="breadcrumb-item" href="../../index.html">Articles</a>
-            <a class="breadcrumb-item" href="../index.html">Physics</a>
+            <RouterLink class="breadcrumb-item" to="/Article">Articles</RouterLink>
+            <RouterLink class="breadcrumb-item" to="/Article/Physics">Physics</RouterLink>
             <span class="breadcrumb-item active" aria-current="page">Physics Engine</span>
           </nav>
 
           <div class="h1">Introduction</div>
 
-          <p>This is a simple physics engine written in javascript. Although it's performance is not the greatest, some optimizations have been made. This section of the website documents its development and the concepts used to develope it.</p>
+          <p>
+            This is a simple physics engine written in javascript. Although it's performance is not the greatest, some optimizations have been made.
+            This section of the website documents its development and the concepts used to develope it.
+          </p>
         </div>
         <!-- End of Main Content -->
       </div>

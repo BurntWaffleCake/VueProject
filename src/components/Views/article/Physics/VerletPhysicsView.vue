@@ -17,16 +17,37 @@
 
         <div class="px-4">
           <nav class="breadcrumb">
-            <a class="breadcrumb-item" href="../../../index.html">Articles</a>
-            <a class="breadcrumb-item" href="../../index.html">Physics</a>
-            <a class="breadcrumb-item" href="../index.html">Physics Engine</a>
+            <RouterLink class="breadcrumb-item" to="/Article">Articles</RouterLink>
+            <RouterLink class="breadcrumb-item" to="/Article/Physics">Physics</RouterLink>
+            <RouterLink class="breadcrumb-item" to="/Article/Physics/PhysicsEngine">Physics Engine</RouterLink>
             <span class="breadcrumb-item active" aria-current="page">Verlet Physics</span>
           </nav>
 
           <h1 style="width: 100%">Verlet Physics</h1>
 
-          <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ExMeENE" data-user="WaffleCake-the-decoder" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em">
-            <span>See the Pen <a href="https://codepen.io/WaffleCake-the-decoder/pen/ExMeENE"> Untitled</a> by WaffleCake (<a href="https://codepen.io/WaffleCake-the-decoder">@WaffleCake-the-decoder</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+          <p
+            class="codepen"
+            data-height="300"
+            data-default-tab="html,result"
+            data-slug-hash="ExMeENE"
+            data-user="WaffleCake-the-decoder"
+            style="
+              height: 300px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen <a href="https://codepen.io/WaffleCake-the-decoder/pen/ExMeENE"> Untitled</a> by WaffleCake (<a
+                href="https://codepen.io/WaffleCake-the-decoder"
+                >@WaffleCake-the-decoder</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
           </p>
         </div>
         <!-- End of Main Content -->

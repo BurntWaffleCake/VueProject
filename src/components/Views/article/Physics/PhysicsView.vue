@@ -17,7 +17,7 @@
 
         <div class="px-4">
           <nav class="breadcrumb">
-            <a class="breadcrumb-item" href="/articles/index.html">Articles</a>
+            <RouterLink class="breadcrumb-item" to="/Article">Articles</RouterLink>
             <span class="breadcrumb-item active" aria-current="page">Physics</span>
           </nav>
 
