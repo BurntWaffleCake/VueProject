@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import ThemeToggleButton from "./ThemeToggleButton.vue";
+import NavLink from "./NavLink.vue";
+import NavDropdown from "./NavDropdown.vue";
 </script>
 
 <template>
@@ -24,31 +26,17 @@ import ThemeToggleButton from "./ThemeToggleButton.vue";
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav navbar-center mb-2 mb-lg-0 d-flex flex-lg-row flex-grow-1">
-          <div class="nav-item">
-            <RouterLink class="nav-link" to="/">Home</RouterLink>
-          </div>
-          <div class="nav-item">
-            <RouterLink class="nav-link" to="/AboutMe">About Me</RouterLink>
-          </div>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Articles </a>
-            <ul class="dropdown-menu">
-              <RouterLink class="dropdown-item" to="/Article">Home</RouterLink>
-              <RouterLink class="dropdown-item" to="/Article/Algorithms">Algorithms</RouterLink>
-              <RouterLink class="dropdown-item" to="/Article/Physics">Physics</RouterLink>
-              <RouterLink class="dropdown-item" to="/Article/Graphics">Graphics</RouterLink>
-            </ul>
-          </li>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/AboutMe">About Me</NavLink>
 
-          <!-- <div class="nav-item">
-            <RouterLink class="nav-link" to="/">Blog</RouterLink>
-          </div>
+          <NavDropdown label="Articles">
+            <RouterLink class="dropdown-item" to="/Article">Home</RouterLink>
+            <RouterLink class="dropdown-item" to="/Article/Algorithms">Algorithms</RouterLink>
+            <RouterLink class="dropdown-item" to="/Article/Physics">Physics</RouterLink>
+            <RouterLink class="dropdown-item" to="/Article/Graphics">Graphics</RouterLink>
+          </NavDropdown>
 
-          <div class="nav-item">
-            <RouterLink class="nav-link" to="/">Projects</RouterLink>
-          </div> -->
-
-          <li class="ms-lg-auto">
+          <li class="ms-lg-auto mt-3 mt-lg-0">
             <ThemeToggleButton />
           </li>
         </ul>
