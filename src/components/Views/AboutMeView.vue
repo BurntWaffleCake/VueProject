@@ -25,7 +25,7 @@ evaluateAge();
     </div>
 
     <div
-      class="px-0 container-fluid w-100 d-flex flex-column justify-content-lg-center justify-content-start align-items-center align-content-lg-center"
+      class="px-0 my-5 container-fluid w-100 d-flex flex-column justify-content-lg-center justify-content-start align-items-center align-content-lg-center"
     >
       <div class="row g-0">
         <div v-motion-slide-visible-once-left class="col-12 p-3 col-lg-6">
@@ -58,9 +58,25 @@ evaluateAge();
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="px-0 container-fluid w-100 vh-100 d-flex flex-column justify-content-center" style="scroll-snap-align: start"></div>
+    <div class="my-5 container-fluid w-100 d-flex flex-column justify-content-center" style="scroll-snap-align: start">
+      <div class="align-self-center w-75">
+        <div class="display-2 text-center text-light mb-3">Skills and Experience</div>
+        <div class="row h-100">
+          <div class="col-lg-4 h-100">
+            <div class="h2">Frameworks and Libraries</div>
+            <hr />
+          </div>
+          <div class="col-lg-4 h-100">
+            <div class="h2">Programming Languages</div>
+          </div>
+          <div class="col-lg-4 h-100">
+            <div class="h2">Other Skills</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style>

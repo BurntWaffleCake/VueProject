@@ -27,7 +27,7 @@ const props = defineProps({
 import ArticleNavLink from "./ArticleNavLink.vue";
 import { ref } from "vue";
 
-const active = ref(false);
+const active = ref(true);
 
 function onClick() {
   active.value = !active.value;
