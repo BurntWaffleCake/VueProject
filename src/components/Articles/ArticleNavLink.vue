@@ -1,5 +1,5 @@
 <template lang="">
-  <RouterLink class="w-100 article-nav-link text-lg-end nav-link p-2" :to="props.path">{{ props.label }}</RouterLink>
+  <RouterLink class="w-100 article-nav-link text-lg-end nav-link p-1" :to="props.path">{{ props.label }}</RouterLink>
 </template>
 <script setup>
 const props = defineProps({
