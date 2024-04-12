@@ -24,31 +24,31 @@
           </nav>
 
           <h1 style="width: 100%">Verlet Physics</h1>
-
-          <p
-            class="codepen"
-            data-height="300"
-            data-default-tab="html,result"
-            data-slug-hash="ExMeENE"
-            data-user="WaffleCake-the-decoder"
-            style="
-              height: 300px;
-              box-sizing: border-box;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border: 2px solid;
-              margin: 1em 0;
-              padding: 1em;
-            "
-          >
-            <span
-              >See the Pen <a href="https://codepen.io/WaffleCake-the-decoder/pen/ExMeENE"> Untitled</a> by WaffleCake (<a
-                href="https://codepen.io/WaffleCake-the-decoder"
-                >@WaffleCake-the-decoder</a
-              >) on <a href="https://codepen.io">CodePen</a>.</span
-            >
+          <p>
+            Verlet Physics is an alternative way to approach calculating physics bodies. It uses Verlet integration which is a way of integrating and
+            solving Newton's equations of motion. To make a complex topic more concise, Verlet physics uses the difference of position from a certain
+            time to another certain time to calculate how that object should react in terms of velocity and acceleration changes. This means that, in
+            the code, the only real thing that we need to do to apply a force on an object is to change its position. This example of Verlet physics
+            uses nodes and bridges to construct highly complex systems with very simple components. Nodes act as particles while bridges are used to
+            maintain a specific distance between two nodes. Using these two simple components, we can simulate very complex systems such as soft
+            bodies or even clothing and architectural designs.
           </p>
+          <iframe
+            height="300"
+            style="width: 100%"
+            scrolling="no"
+            title="Untitled"
+            src="https://codepen.io/WaffleCake-the-decoder/embed/preview/ExMeENE?default-tab=html%2Cresult"
+            frameborder="no"
+            loading="lazy"
+            allowtransparency="true"
+            allowfullscreen="true"
+          >
+            See the Pen <a href="https://codepen.io/WaffleCake-the-decoder/pen/ExMeENE"> Untitled</a> by WaffleCake (<a
+              href="https://codepen.io/WaffleCake-the-decoder"
+              >@WaffleCake-the-decoder</a
+            >) on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
         </div>
         <!-- End of Main Content -->
       </div>
@@ -59,17 +59,5 @@
     </div>
   </div>
 </template>
-<script setup>
-import { onMounted } from "vue";
-
-onMounted(() => {
-  let codepenScript = document.createElement("script");
-  codepenScript.setAttribute("src", "https://cpwebassets.codepen.io/assets/embed/ei.js");
-  document.head.appendChild(codepenScript);
-
-  let MathJax = document.createElement("script");
-  MathJax.setAttribute("src", "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js");
-  document.head.appendChild(MathJax);
-});
-</script>
+<script setup></script>
 <style></style>

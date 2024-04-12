@@ -94,30 +94,22 @@
           <p>Using the math previously described, we can make a physics simulation to describe collision detection and response.</p>
           <br />
           <p>Click to spawn in balls</p>
-          <p
-            class="codepen"
-            data-height="300"
-            data-default-tab="html,result"
-            data-slug-hash="wvNPYGK"
-            data-user="WaffleCake-the-decoder"
-            style="
-              height: 300px;
-              box-sizing: border-box;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border: 2px solid;
-              margin: 1em 0;
-              padding: 1em;
-            "
+          <iframe
+            height="300"
+            style="width: 100%"
+            scrolling="no"
+            title="Untitled"
+            src="https://codepen.io/WaffleCake-the-decoder/embed/preview/wvNPYGK?default-tab=html%2Cresult"
+            frameborder="no"
+            loading="lazy"
+            allowtransparency="true"
+            allowfullscreen="true"
           >
-            <span
-              >See the Pen <a href="https://codepen.io/WaffleCake-the-decoder/pen/wvNPYGK"> Untitled</a> by WaffleCake (<a
-                href="https://codepen.io/WaffleCake-the-decoder"
-                >@WaffleCake-the-decoder</a
-              >) on <a href="https://codepen.io">CodePen</a>.</span
-            >
-          </p>
+            See the Pen <a href="https://codepen.io/WaffleCake-the-decoder/pen/wvNPYGK"> Untitled</a> by WaffleCake (<a
+              href="https://codepen.io/WaffleCake-the-decoder"
+              >@WaffleCake-the-decoder</a
+            >) on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
         </div>
         <!-- End of Main Content -->
       </div>
@@ -130,15 +122,8 @@
 </template>
 <script setup>
 import { onMounted } from "vue";
-
 onMounted(() => {
-  let codepenScript = document.createElement("script");
-  codepenScript.setAttribute("src", "https://cpwebassets.codepen.io/assets/embed/ei.js");
-  document.head.appendChild(codepenScript);
-
-  let MathJax = document.createElement("script");
-  MathJax.setAttribute("src", "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js");
-  document.head.appendChild(MathJax);
+  MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 });
 </script>
 <style></style>

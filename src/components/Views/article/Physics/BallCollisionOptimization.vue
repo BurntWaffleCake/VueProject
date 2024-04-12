@@ -58,31 +58,22 @@
             grid's cell size to the ball's diameter. Even with this limitation, this optimization can still be used to simulate fluids and particle
             interactions.
           </p>
-
-          <p
-            class="codepen"
-            data-height="500"
-            data-default-tab="html,result"
-            data-slug-hash="RwvdGxZ"
-            data-user="WaffleCake-the-decoder"
-            style="
-              height: 300px;
-              box-sizing: border-box;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border: 2px solid;
-              margin: 1em 0;
-              padding: 1em;
-            "
+          <iframe
+            height="300"
+            style="width: 100%"
+            scrolling="no"
+            title="Untitled"
+            src="https://codepen.io/WaffleCake-the-decoder/embed/preview/RwvdGxZ?default-tab=html%2Cresult"
+            frameborder="no"
+            loading="lazy"
+            allowtransparency="true"
+            allowfullscreen="true"
           >
-            <span
-              >See the Pen <a href="https://codepen.io/WaffleCake-the-decoder/pen/RwvdGxZ"> Untitled</a> by WaffleCake (<a
-                href="https://codepen.io/WaffleCake-the-decoder"
-                >@WaffleCake-the-decoder</a
-              >) on <a href="https://codepen.io">CodePen</a>.</span
-            >
-          </p>
+            See the Pen <a href="https://codepen.io/WaffleCake-the-decoder/pen/RwvdGxZ"> Untitled</a> by WaffleCake (<a
+              href="https://codepen.io/WaffleCake-the-decoder"
+              >@WaffleCake-the-decoder</a
+            >) on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
 
           <h3 class="bookmark" data-skew="2">Recursive Spatial Partitioning</h3>
           <p>
@@ -116,15 +107,8 @@
 </template>
 <script setup>
 import { onMounted } from "vue";
-
 onMounted(() => {
-  let codepenScript = document.createElement("script");
-  codepenScript.setAttribute("src", "https://cpwebassets.codepen.io/assets/embed/ei.js");
-  document.head.appendChild(codepenScript);
-
-  let MathJax = document.createElement("script");
-  MathJax.setAttribute("src", "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js");
-  document.head.appendChild(MathJax);
+  MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 });
 </script>
 <style></style>
